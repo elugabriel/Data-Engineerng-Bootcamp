@@ -1,0 +1,18 @@
+LEFT OUTER JOIN of "inventory" table and a "rental" table
+
+SELECT *
+FROM inventory
+LEFT OUTER JOIN rental ON inventory.inventory_id = rental.inventory_id;
+
+
+Full Outer Join:
+SELECT *
+FROM inventory
+FULL OUTER JOIN rental ON inventory.inventory_id = rental.inventory_id;
+
+
+
+Inner Join:
+SELECT *
+FROM inventory
+INNER JOIN rental ON inventory.inventory_id = rental.inventory_id;
